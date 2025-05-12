@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brand Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://i.postimg.cc/2SrFjWv8/Bax.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      width: 180px;
+      margin-top: 1rem;
+    }
+
+    .description {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .black-bold {
+      color: black;
+      font-weight: bold;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .tile {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+    }
+
+    .tile img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      background-color: transparent;
+      object-fit: contain;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .input-box {
+      margin-top: 1rem;
+    }
+
+    .input-box input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      width: 80%;
+      max-width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .input-box button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: orange;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ccc;
+      margin-top: 2rem;
+    }
+
+    .about-text {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      color: black;
+      font-weight: bold;
+      background: rgba(255,255,255,0.8);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 769px) {
+      nav a {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background: url('https://i.postimg.cc/5NpY9JyC/Ba.png') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 1rem;
+      }
+
+      .tile {
+        padding: 1.5rem;
+      }
+
+      .tile img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        transform: scale(2);
+        transform-origin: top;
+        pointer-events: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.postimg.cc/fyzHXZN9/Ilmush-LOGO-Full-black.png" alt="Brand Logo" class="logo">
+    <div class="description black-bold">From Thread to Masterpiece, embroidered designs that redefine creativity.</div>
+  </div>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About Us</a>
+    <a onclick="showSection('contact')">Contact Us</a>
+  </nav>
+
+  <div id="home" class="container">
+    <div class="gallery">
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DNSFPMMC" target="_blank"><img src="https://i.postimg.cc/VvRwF7MS/Deadpool-1.png" alt="Image 1"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DNQ6328C" target="_blank"><img src="https://i.postimg.cc/C1pVpysB/CR7.png" alt="Image 2"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6MJS1H" target="_blank"><img src="https://i.postimg.cc/KcNhwHkj/Kohli-1a.png" alt="Image 3"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DTY4M32H" target="_blank"><img src="https://i.postimg.cc/pL1271Sz/CHE-1.png" alt="Image 4"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DSTNVMNV" target="_blank"><img src="https://i.postimg.cc/FR4wnyh0/SQUID-G.png" alt="Image 5"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DY52JZL4" target="_blank"><img src="https://i.postimg.cc/k56ndvrZ/CR-7a.png" alt="Image 6"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 7"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 8"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 9"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 10"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 11"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKMTNQZ" target="_blank"><img src="https://i.postimg.cc/Kj9VzCB5/REAL-M-A.png" alt="Image 12"></a></div>
+    </div>
+  </div>
+
+  <div id="about" class="container hidden">
+    <img src="https://i.postimg.cc/fyzHXZN9/Ilmush-LOGO-Full-black.png" alt="Brand Logo" class="logo">
+    <div class="about-text">
+      Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.
+    </div>
+  </div>
+
+  <div id="contact" class="container hidden">
+    <div class="description black-bold">Enter your details to contact us:</div>
+    <form id="contactForm" action="https://formsubmit.co/ilmush.916@gmail.com" method="POST" onsubmit="return handleSubmit(event)">
+      <div class="input-box">
+        <input type="text" id="userName" name="name" placeholder="Your Name" required>
+        <input type="email" id="userEmail" name="email" placeholder="Your Email" required>
+        <input type="text" id="phoneNumber" name="phone" placeholder="Your Phone Number" required>
+        <button type="submit">Submit</button>
+      </div>
+      <input type="hidden" name="_subject" value="New Contact from Gallery Page">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+    <div id="whatsappLink" class="hidden">
+      <p>Your form has been successfully submitted! <br> Click below to contact us on WhatsApp:</p>
+      <a id="whatsappBtn" href="#" target="_blank" style="color: green; font-weight: bold;">Contact on WhatsApp</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 ILMUSH. All rights reserved.
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.getElementById('home').classList.add('hidden');
+      document.getElementById('about').classList.add('hidden');
+      document.getElementById('contact').classList.add('hidden');
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent form from submitting immediately
+
+      const phone = document.getElementById('phoneNumber').value.trim();
+      const name = document.getElementById('userName').value;
+      const email = document.getElementById('userEmail').value;
+
+      if (phone) {
+        // Submit the form to your email
+        document.getElementById('contactForm').submit();
+
+        // Show WhatsApp link after form submission
+        setTimeout(() => {
+          window.location.reload(); // Reload the page to show the WhatsApp link
+          document.getElementById('whatsappLink').classList.remove('hidden');
+          document.getElementById('whatsappBtn').href = `https://wa.me/918983902178?text=Hi, I am interested in your products. My details: Name: ${name}, Email: ${email}, Phone: ${phone}`;
+        }, 1000); // Delay before redirecting
+      } else {
+        alert("Please enter a valid phone number.");
+      }
+    }
+  </script>
+</body>
+</html>
