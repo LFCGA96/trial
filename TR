@@ -207,8 +207,8 @@
       <input type="hidden" name="_captcha" value="false">
     </form>
     <div id="whatsappLink" class="hidden">
-      <p>Your form has been successfully submitted! <br> Click below to contact us on WhatsApp:</p>
-      <a id="whatsappBtn" href="#" target="_blank" style="color: green; font-weight: bold;">Contact on WhatsApp</a>
+      <p style="color: black; font-weight: bold;">Your form has been successfully submitted! <br> Click below to contact us on WhatsApp:</p>
+      <a id="whatsappBtn" href="#" target="_blank" style="color: white; background-color: green; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Contact on WhatsApp</a>
     </div>
   </div>
 
