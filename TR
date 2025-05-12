@@ -187,7 +187,10 @@
   <div id="about" class="container hidden">
     <img src="https://i.postimg.cc/fyzHXZN9/Ilmush-LOGO-Full-black.png" alt="Brand Logo" class="logo">
     <div class="about-text">
-      Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.
+      <h2 class="black-bold">About ILMUSH Embroidery</h2>
+      <p>Founded in 2024, ILMUSH Embroidery is a creative embroidery brand specializing in sports logo patches and customized photo frame embroideries. With a passion for precision and detail, we bring designs to life through high-quality stitching and innovative craftsmanship.</p>
+      <p>At ILMUSH, we started our journey with a focus on sports logo patches, aiming to provide fans, athletes, and collectors with vibrant, durable, and authentically embroidered designs. Over time, we expanded our offerings to include custom photo frame embroideries, allowing our customers to turn cherished memories into timeless embroidered art.</p>
+      <p>Whether it's a team emblem or a personalized photo, every piece at ILMUSH is made with care, creativity, and a commitment to excellence. We take pride in turning ideas into embroidered expressions that last a lifetime.</p>
     </div>
   </div>
 
