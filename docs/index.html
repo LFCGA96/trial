@@ -176,7 +176,7 @@
       <div class="tile"><a href="https://www.amazon.in/dp/B0DSTNVMNV" target="_blank"><img src="https://i.postimg.cc/FR4wnyh0/SQUID-G.png" alt="Image 5"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DY52JZL4" target="_blank"><img src="https://i.postimg.cc/k56ndvrZ/CR-7a.png" alt="Image 6"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6YT1RF" target="_blank"><img src="https://i.postimg.cc/VLZQL0Fc/Inter.png" alt="Image 7"></a></div>
-      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKNMQNV" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 8"></a></div>
+      <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/Y02ZttG9/PSG.png" alt="Image 8"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DP6H2TKX" target="_blank"><img src="https://i.postimg.cc/fW00vYJ8/Bayern-2-A.png" alt="Image 9"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DPKK8DY5" target="_blank"><img src="https://i.postimg.cc/x19JY7gZ/BARCA-A.png" alt="Image 10"></a></div>
       <div class="tile"><a href="https://www.amazon.in/dp/B0DPKLRCLK" target="_blank"><img src="https://i.postimg.cc/5NdQKjzb/ARSENAL-A.png" alt="Image 11"></a></div>
@@ -230,14 +230,22 @@
 
       if (phone) {
         // Submit the form to your email
-        document.getElementById('contactForm').submit();
-
-        // Show WhatsApp link after form submission
-        setTimeout(() => {
-          window.location.reload(); // Reload the page to show the WhatsApp link
+        const form = document.getElementById('contactForm');
+        const formData = new FormData(form);
+        
+        // Submit the form asynchronously
+        fetch(form.action, {
+          method: form.method,
+          body: formData,
+        })
+        .then(() => {
+          // Display WhatsApp link immediately
           document.getElementById('whatsappLink').classList.remove('hidden');
           document.getElementById('whatsappBtn').href = `https://wa.me/918983902178?text=Hi, I am interested in your products. My details: Name: ${name}, Email: ${email}, Phone: ${phone}`;
-        }, 1000); // Delay before redirecting
+        })
+        .catch((error) => {
+          alert('Error submitting form. Please try again.');
+        });
       } else {
         alert("Please enter a valid phone number.");
       }
